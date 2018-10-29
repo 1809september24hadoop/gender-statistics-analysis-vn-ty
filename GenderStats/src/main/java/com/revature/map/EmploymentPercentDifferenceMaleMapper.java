@@ -2,13 +2,14 @@ package com.revature.map;
 
 import java.io.IOException;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.mapreduce.Mapper;
 
 public class EmploymentPercentDifferenceMaleMapper extends Mapper<LongWritable, Text, Text, FloatWritable> {
 	@Override
-	public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+	public void map(LongWritable key, Text value, Context context) 
+			throws IOException, InterruptedException {
 		float infoOldest, infoMostRecent = 0;
 		boolean firstFound = false;
 		String[] row = value.toString().split(",");

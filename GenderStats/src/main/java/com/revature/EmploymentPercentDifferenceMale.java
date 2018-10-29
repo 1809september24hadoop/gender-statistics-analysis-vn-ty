@@ -13,7 +13,7 @@ import com.revature.reduce.EmploymentPercentDifferenceMaleReducer;
 public class EmploymentPercentDifferenceMale {
 	public static void main(String[] args) throws Exception {
 		if(args.length != 2) {
-			System.out.println("you're using this command incorrectly");
+			System.out.println("you're using this incorrectly");
 			System.exit(-1);
 		}
 		Job job = new Job();

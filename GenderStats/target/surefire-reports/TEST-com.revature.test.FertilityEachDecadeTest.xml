@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="3" failures="2" name="com.revature.test.FertilityEachDecadeTest" time="0.059" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/java/jdk1.8.0_172/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.172-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/cloudera/gender-statistics-analysis-vn-ty/GenderStats"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/java/jdk1.8.0_172/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/cloudera/gender-statistics-analysis-vn-ty/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf3012899193616785294.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="2.6.32-754.6.3.el6.x86_64"/>
+    <property name="user.home" value="/home/cloudera"/>
+    <property name="user.timezone" value="US/Pacific"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="cloudera"/>
+    <property name="java.class.path" value="/home/cloudera/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/java/jdk1.8.0_172/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="java.ext.dirs" value="/usr/java/jdk1.8.0_172/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/java/jdk1.8.0_172/jre/lib/resources.jar:/usr/java/jdk1.8.0_172/jre/lib/rt.jar:/usr/java/jdk1.8.0_172/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_172/jre/lib/jsse.jar:/usr/java/jdk1.8.0_172/jre/lib/jce.jar:/usr/java/jdk1.8.0_172/jre/lib/charsets.jar:/usr/java/jdk1.8.0_172/jre/lib/jfr.jar:/usr/java/jdk1.8.0_172/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/cloudera/gender-statistics-analysis-vn-ty/GenderStats/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.revature.test.FertilityEachDecadeTest" name="testReducer" time="0.009"/>
+  <testcase classname="com.revature.test.FertilityEachDecadeTest" name="testMapper" time="0.017">
+    <failure message="18 Error(s): (Missing expected output (&quot;El Salvador&quot;,82, 4.12) at position 7., Missing expected output (&quot;El Salvador&quot;,14, 1.75) at position 17., Missing expected output (&quot;El Salvador&quot;,00, 2.51) at position 12., Missing expected output (&quot;El Salvador&quot;,70, 5.21) at position 3., Missing expected output (&quot;El Salvador&quot;,02, 2.36) at position 13., Missing expected output (&quot;El Salvador&quot;,90, 3.78) at position 9., Missing expected output (&quot;El Salvador&quot;,92, 3.49) at position 10., Missing expected output (&quot;El Salvador&quot;,64, 6.41) at position 2., Missing expected output (&quot;El Salvador&quot;,10, 2.13) at position 15., Missing expected output (&quot;El Salvador&quot;,12, 1.95) at position 16., Missing expected output (&quot;El Salvador&quot;,60, 6.67) at position 0., Missing expected output (&quot;El Salvador&quot;,04, 2.49) at position 14., Missing expected output (&quot;El Salvador&quot;,62, 6.67) at position 1., Missing expected output (&quot;El Salvador&quot;,94, 3.17) at position 11., Missing expected output (&quot;El Salvador&quot;,80, 4.51) at position 6., Missing expected output (&quot;El Salvador&quot;,74, 5.05) at position 5., Missing expected output (&quot;El Salvador&quot;,84, 4.2) at position 8., Missing expected output (&quot;El Salvador&quot;,72, 5.31) at position 4.)" type="java.lang.AssertionError">java.lang.AssertionError: 18 Error(s): (Missing expected output (&quot;El Salvador&quot;,82, 4.12) at position 7., Missing expected output (&quot;El Salvador&quot;,14, 1.75) at position 17., Missing expected output (&quot;El Salvador&quot;,00, 2.51) at position 12., Missing expected output (&quot;El Salvador&quot;,70, 5.21) at position 3., Missing expected output (&quot;El Salvador&quot;,02, 2.36) at position 13., Missing expected output (&quot;El Salvador&quot;,90, 3.78) at position 9., Missing expected output (&quot;El Salvador&quot;,92, 3.49) at position 10., Missing expected output (&quot;El Salvador&quot;,64, 6.41) at position 2., Missing expected output (&quot;El Salvador&quot;,10, 2.13) at position 15., Missing expected output (&quot;El Salvador&quot;,12, 1.95) at position 16., Missing expected output (&quot;El Salvador&quot;,60, 6.67) at position 0., Missing expected output (&quot;El Salvador&quot;,04, 2.49) at position 14., Missing expected output (&quot;El Salvador&quot;,62, 6.67) at position 1., Missing expected output (&quot;El Salvador&quot;,94, 3.17) at position 11., Missing expected output (&quot;El Salvador&quot;,80, 4.51) at position 6., Missing expected output (&quot;El Salvador&quot;,74, 5.05) at position 5., Missing expected output (&quot;El Salvador&quot;,84, 4.2) at position 8., Missing expected output (&quot;El Salvador&quot;,72, 5.31) at position 4.)
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.apache.hadoop.mrunit.TestDriver.validate(TestDriver.java:294)
+	at org.apache.hadoop.mrunit.MapDriverBase.runTest(MapDriverBase.java:151)
+	at org.apache.hadoop.mrunit.TestDriver.runTest(TestDriver.java:137)
+	at com.revature.test.FertilityEachDecadeTest.testMapper(FertilityEachDecadeTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-err>18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,82, 4.12) at position 7.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,14, 1.75) at position 17.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,00, 2.51) at position 12.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,70, 5.21) at position 3.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,02, 2.36) at position 13.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,90, 3.78) at position 9.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,92, 3.49) at position 10.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,64, 6.41) at position 2.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,10, 2.13) at position 15.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,12, 1.95) at position 16.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,60, 6.67) at position 0.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,04, 2.49) at position 14.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,62, 6.67) at position 1.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,94, 3.17) at position 11.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,80, 4.51) at position 6.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,74, 5.05) at position 5.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,84, 4.2) at position 8.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (&quot;El Salvador&quot;,72, 5.31) at position 4.
+</system-err>
+  </testcase>
+  <testcase classname="com.revature.test.FertilityEachDecadeTest" name="testMapReduce" time="0.033">
+    <failure message="8 Error(s): (Missing expected output (El Salvador -- 1970, 5.19) at position 1., Missing expected output (El Salvador -- 1960, 6.5833335) at position 0., Missing expected output (El Salvador -- 2010, 1.9433333) at position 5., Missing expected output (El Salvador -- 1980, 4.2766666) at position 2., Missing expected output (El Salvador -- 1990, 3.4800003) at position 3., Missing expected output (El Salvador -- 2000, 2.4533331) at position 4., Received unexpected output (El Salvador -- 1970, 2.48125) at position 1., Received unexpected output (El Salvador -- 1960, 5.193) at position 0.)" type="java.lang.AssertionError">java.lang.AssertionError: 8 Error(s): (Missing expected output (El Salvador -- 1970, 5.19) at position 1., Missing expected output (El Salvador -- 1960, 6.5833335) at position 0., Missing expected output (El Salvador -- 2010, 1.9433333) at position 5., Missing expected output (El Salvador -- 1980, 4.2766666) at position 2., Missing expected output (El Salvador -- 1990, 3.4800003) at position 3., Missing expected output (El Salvador -- 2000, 2.4533331) at position 4., Received unexpected output (El Salvador -- 1970, 2.48125) at position 1., Received unexpected output (El Salvador -- 1960, 5.193) at position 0.)
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.apache.hadoop.mrunit.TestDriver.validate(TestDriver.java:294)
+	at org.apache.hadoop.mrunit.MapReduceDriverBase.runTest(MapReduceDriverBase.java:142)
+	at org.apache.hadoop.mrunit.TestDriver.runTest(TestDriver.java:137)
+	at com.revature.test.FertilityEachDecadeTest.testMapReduce(FertilityEachDecadeTest.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-err>18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (El Salvador -- 1970, 5.19) at position 1.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (El Salvador -- 1960, 6.5833335) at position 0.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (El Salvador -- 2010, 1.9433333) at position 5.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (El Salvador -- 1980, 4.2766666) at position 2.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (El Salvador -- 1990, 3.4800003) at position 3.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Missing expected output (El Salvador -- 2000, 2.4533331) at position 4.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Received unexpected output (El Salvador -- 1970, 2.48125) at position 1.
+18/10/29 03:43:33 ERROR mrunit.TestDriver: Received unexpected output (El Salvador -- 1960, 5.193) at position 0.
+</system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,23 @@
+package com.revature;
+
+import java.io.IOException;
+
+import org.apache.hadoop.mapreduce.Job;
+
+import com.revature.map.EmploymentPercentDifferenceMaleMapper;
+import com.revature.reduce.EmploymentPercentDifferenceMaleReducer;
+
+public class EmploymentPercentDifferenceFemale {
+	public static void main(String[] args) throws IOException {
+		if(args.length != 2) {
+			System.out.println("you're using this command incorrectly");
+			System.exit(-1);
+		}
+		Job job = new Job();
+		job.setJarByClass(EmploymentPercentDifferenceFemale.class);
+		job.setJobName("The % change in male employment since 2000.");
+		
+		job.setMapperClass(EmploymentPercentDifferenceFemaleMapper.class);
+		job.setReducerClass(EmploymentPercentDifferenceFemaleReducer.class);
+	}
+}
