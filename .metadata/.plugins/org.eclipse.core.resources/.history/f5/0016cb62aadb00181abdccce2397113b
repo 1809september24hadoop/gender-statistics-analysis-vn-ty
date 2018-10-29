@@ -19,7 +19,7 @@ public class RecentFemaleGraduatesTest {
 	private MapDriver<LongWritable, Text, Text, FloatWritable> mapDriver;
 	private ReduceDriver<Text, FloatWritable, Text, FloatWritable> reduceDriver;
 	private MapReduceDriver<LongWritable, Text, Text, FloatWritable, Text, FloatWritable> mapReduceDriver;
-	private String row = "\"Ghana\",\"GHA\",\"Gross graduation ratio, primary, female (%)\",\"SE.PRM.CMPL.FE.ZS\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"20.28817\",\"21.85429\",\"\",\"\",";
+	private String row = "\"Denmark\",\"DNK\",\"Gross graduation ratio, primary, female (%)\",\"SE.PRM.CMPL.FE.ZS\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"100.28817\",\"99.85429\",\"\",\"\",";
 	
 	@Before
 	public void setUp() {
@@ -39,25 +39,25 @@ public class RecentFemaleGraduatesTest {
 	@Test
 	public void testMapper() {
 		mapDriver.withInput(new LongWritable(1), new Text(row));
-		mapDriver.withOutput(new Text("\"Ghana\""), new FloatWritable((float)21.85429));
-		mapDriver.withOutput(new Text("\"Ghana\""), new FloatWritable((float)20.28817));
+		mapDriver.withOutput(new Text("\"Denmark\""), new FloatWritable((float)99.85429));
+		mapDriver.withOutput(new Text("\"Denmark\""), new FloatWritable((float)100.28817));
 		mapDriver.runTest();
 	}
 	
 	@Test
 	public void testReducer() {
 		List<FloatWritable> values = new ArrayList<FloatWritable>();
-		values.add(new FloatWritable((float)20.28817));
-		values.add(new FloatWritable((float)21.85429));
-		reduceDriver.withInput(new Text("Ghana"), values);
-		reduceDriver.withOutput(new Text("Ghana -- "), new FloatWritable((values.get(0).get()+values.get(1).get())/2));
+		values.add(new FloatWritable((float)100.28817));
+		values.add(new FloatWritable((float)99.85429));
+		reduceDriver.withInput(new Text("Denmark"), values);
+		reduceDriver.withOutput(new Text("Denmark -- "), new FloatWritable((values.get(0).get()+values.get(1).get())/2));
 		reduceDriver.runTest();
 	}
 	
 	@Test
 	public void testMapReduce() {
 		mapReduceDriver.withInput(new LongWritable(1), new Text(row));
-		mapReduceDriver.addOutput(new Text("Ghana -- "), new FloatWritable(((float)21.85429+(float)20.28817)/2));
+		mapReduceDriver.addOutput(new Text("Denmark -- "), new FloatWritable(((float)100.28817+(float)99.85429)/2));
 		mapReduceDriver.runTest();		
 	}
 }

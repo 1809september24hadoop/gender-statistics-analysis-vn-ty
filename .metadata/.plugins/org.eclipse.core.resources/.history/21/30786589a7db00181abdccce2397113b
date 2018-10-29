@@ -15,6 +15,6 @@ public class RecentFemaleGraduateReducer extends Reducer<Text, FloatWritable, Te
 			sum += value.get();
 			count++;
 		}
-		if((sum/count) < 30) {context.write(new Text(key.toString().replace("\"", "") + " -- "), new FloatWritable(sum/count));}
+		if((sum/count) > 30) {context.write(new Text(key.toString().replace("\"", "") + " -- "), new FloatWritable(sum/count));}
 	}
 }
