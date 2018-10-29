@@ -13,9 +13,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.revature.map.EmploymentPercentDifferenceFemaleMapper;
-import com.revature.map.EmploymentPercentDifferenceMaleMapper;
 import com.revature.reduce.EmploymentPercentDifferenceFemaleReducer;
-import com.revature.reduce.EmploymentPercentDifferenceMaleReducer;
 
 public class EmploymentPercentDifferenceFemaleTest {
 	
