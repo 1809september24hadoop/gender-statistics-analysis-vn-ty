@@ -1,0 +1,63 @@
+package com.revature.test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+import org.junit.Before;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.io.FloatWritable;
+import org.apache.hadoop.io.LongWritable;
+import com.revature.map.RecentFemaleGraduateMapper;
+import org.apache.hadoop.mrunit.mapreduce.MapDriver;
+import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
+import com.revature.reduce.RecentFemaleGraduateReducer;
+import org.apache.hadoop.mrunit.mapreduce.MapReduceDriver;
+
+public class RecentFemaleGraduatesTest {
+	
+	private MapDriver<LongWritable, Text, Text, FloatWritable> mapDriver;
+	private ReduceDriver<Text, FloatWritable, Text, FloatWritable> reduceDriver;
+	private MapReduceDriver<LongWritable, Text, Text, FloatWritable, Text, FloatWritable> mapReduceDriver;
+	private String row = "\"Denmark\",\"DNK\",\"Gross graduation ratio, primary, female (%)\",\"SE.PRM.CMPL.FE.ZS\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"100.28817\",\"99.85429\",\"\",\"\",";
+	
+	@Before
+	public void setUp() {
+		RecentFemaleGraduateMapper mapper = new RecentFemaleGraduateMapper();
+		mapDriver = new MapDriver<>();
+		mapDriver.setMapper(mapper);
+		
+		RecentFemaleGraduateReducer reducer = new RecentFemaleGraduateReducer();
+		reduceDriver = new ReduceDriver<>();
+		reduceDriver.setReducer(reducer);
+		
+		mapReduceDriver = new MapReduceDriver<>();
+		mapReduceDriver.setMapper(mapper);
+		mapReduceDriver.setReducer(reducer);
+	}
+	
+	@Test
+	public void testMapper() {
+		mapDriver.withInput(new LongWritable(1), new Text(row));
+		mapDriver.withOutput(new Text("\"Denmark\""), new FloatWritable((float)99.85429));
+		mapDriver.withOutput(new Text("\"Denmark\""), new FloatWritable((float)100.28817));
+		mapDriver.runTest();		
+	}
+	
+	@Test
+	public void testReducer() {
+		List<FloatWritable> values = new ArrayList<FloatWritable>();
+		values.add(new FloatWritable((float)100.28817));
+		values.add(new FloatWritable((float)99.85429));
+		reduceDriver.withInput(new Text("Denmark"), values);
+		reduceDriver.withOutput(new Text("Denmark -- "), new FloatWritable((values.get(0).get()+values.get(1).get())/2));
+		reduceDriver.runTest();
+	}
+	
+	@Test
+	public void testMapReduce() {
+		mapReduceDriver.withInput(new LongWritable(1), new Text(row));
+		mapReduceDriver.addOutput(new Text("Denmark -- "), new FloatWritable(((float)100.28817+(float)99.85429)/2));
+		mapReduceDriver.runTest();		
+	}
+}
