@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmploymentPercentDifferenceFemaleTest" project="GenderStats" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.revature.test.EmploymentPercentDifferenceFemaleTest" time="0.325">
+    <testcase name="testReducer" classname="com.revature.test.EmploymentPercentDifferenceFemaleTest" time="0.274"/>
+    <testcase name="testMapper" classname="com.revature.test.EmploymentPercentDifferenceFemaleTest" time="0.031"/>
+    <testcase name="testMapReduce" classname="com.revature.test.EmploymentPercentDifferenceFemaleTest" time="0.02"/>
+  </testsuite>
+</testrun>
